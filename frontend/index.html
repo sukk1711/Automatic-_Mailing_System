@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Sender</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input, button {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Email Sender</h2>
+    <form id="emailForm">
+        <label for="recipient">Recipient Email:</label>
+        <input type="email" id="recipient" name="recipient" required>
+
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject" required>
+
+        <label for="content">Email Content:</label>
+        <textarea id="content" name="content" rows="4" required></textarea>
+
+        <button type="button" onclick="sendEmail()">Send Email</button>
+    </form>
+
+    <script src="main.js"></script>
+</body>
+</html>
